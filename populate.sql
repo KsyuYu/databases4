@@ -3,6 +3,11 @@ INSERT INTO country (country) VALUES ('USA');
 INSERT INTO country (country) VALUES ('Italy');
 INSERT INTO country (country) VALUES ('Ukraine');
 
+-- POPULATE disease 
+INSERT INTO disease (disease) VALUES ('COVID-19');
+INSERT INTO disease (disease) VALUES ('Cancer');
+INSERT INTO disease (disease) VALUES ('Lupus');
+
 -- POPULATE symptom 
 INSERT INTO symptom (symptom) VALUES ('Cough');
 INSERT INTO symptom (symptom) VALUES ('Fever');
@@ -13,10 +18,10 @@ INSERT INTO person (id, name) VALUES (0001, 'Bob');
 INSERT INTO person (id, name) VALUES (0002, 'Boba');
 INSERT INTO person (id, name) VALUES (0003, 'Boban');
 
--- POPULATE disease
-INSERT INTO disease (disease, symptom_symptom) VALUES ('COVID-19', 'Cough');
-INSERT INTO disease (disease, symptom_symptom) VALUES ('COVID-19', 'Fever');
-INSERT INTO disease (disease, symptom_symptom) VALUES ('COVID-19', 'Difficulty breathing');
+-- POPULATE diseasesymptom
+INSERT INTO diseasesymptom (disease, symptom_symptom) VALUES ('COVID-19', 'Cough');
+INSERT INTO diseasesymptom (disease, symptom_symptom) VALUES ('COVID-19', 'Fever');
+INSERT INTO diseasesymptom (disease, symptom_symptom) VALUES ('COVID-19', 'Difficulty breathing');
 
 -- POPULATE personcountry 
 INSERT INTO personcountry (person_id, country_country, data) VALUES (0001, 'USA', '12022020');
